@@ -25,6 +25,11 @@ function Header() {
     }
     setIsMenuClicked(!isMenuClicked);
   }
+  const handleLinkClick = () =>{
+    setNavClass("nav-menu");
+    setHamburgerClass("hamburger");
+    setIsMenuClicked(false);
+  }
 
 
   return (
@@ -36,23 +41,23 @@ function Header() {
           </Link>
 
           <div className={nav_class}>
-            <Link className="nav-item nav-link" to={"/*"}>
+            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/*"}>
               Home
             </Link>
-            <Link className="nav-item nav-link" to={"/lessons"}>
+            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/lessons"}>
               Lessons
             </Link>
-            <Link className="nav-item nav-link" to={"/findtutors"}>
+            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/findtutors"}>
               Find Tutors
             </Link>
-            <Link className="nav-item nav-link" to={"/aboutus"}>
+            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/aboutus"}>
               About Us
             </Link>
             <div className="log-btns-container">
-              <Link className="nav-item login" to={"/login"}>
+              <Link className="nav-item nav-link login" onClick={() =>handleLinkClick()} to={"/login"}>
                 Login
               </Link>
-              <Link className="nav-item signup" to={"/signup"}>
+              <Link className="nav-item nav-link signup" onClick={() =>handleLinkClick()} to={"/signup"}>
                 Sign Up
               </Link>
             </div>

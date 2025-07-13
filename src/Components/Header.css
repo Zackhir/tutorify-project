@@ -9,49 +9,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 107px;
+    margin: 0 6.5em;
 }
 .nav-menu{
     display: flex;
     align-items: center;
-    gap: 53px;
+    gap: 3.25em;
 }
-.log-btns-container{
-    display: flex;
-}
-.signup{
-    text-decoration: none;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 102px;
-    height: 44px;
-    border: none;
-    border-radius: 8px;
-    background-color: #FB9C46;
-    color: #FFFFFF;
-    font-size:16px ;
-    font-weight:600;
-    transition: 0.7s ease;
-}
-.login{
-    text-decoration: none;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 102px;
-    height: 44px;
-    border: none;
-    border-radius: 8px;
-    background-color: #407F55;
-    color: #FFFFFF;
-    font-size:16px ;
-    font-weight:600;
-    transition: 0.7s ease;
-}
-
 .nav-link{
     text-decoration: none;
     color: #393939;
@@ -62,6 +26,36 @@
 .nav-link:hover{
 
 }
+
+.log-btns-container{
+    display: flex;
+}
+.signup{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 102px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FB9C46;
+    color: #FFFFFF;
+
+}
+.login{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 102px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    background-color: #407F55;
+    color: #FFFFFF;
+}
+
 
 .nav-branding{
     text-decoration: none;
@@ -113,6 +107,6 @@
 
     }
     .nav-menu.active{
-        left: 0;
+        right: 0;
     }
 }
