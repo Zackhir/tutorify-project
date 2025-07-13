@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 117px;
+    border-bottom: 1px solid #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 107px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 53px;
+}
+.log-btns-container{
+    display: flex;
+}
+.signup{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 102px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FB9C46;
+    color: #FFFFFF;
+    font-size:16px ;
+    font-weight:600;
+    transition: 0.7s ease;
+}
+.login{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 102px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    background-color: #407F55;
+    color: #FFFFFF;
+    font-size:16px ;
+    font-weight:600;
+    transition: 0.7s ease;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #393939;
+    font-size:16px ;
+    font-weight:600;
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+
+}
+
+.nav-branding{
+    text-decoration: none;
+    color: #393939;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 18px;
+    height: 3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FB9C46;
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+         opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+         transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top:77px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        width: 70%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-items{
+
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
