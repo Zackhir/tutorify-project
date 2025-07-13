@@ -24,11 +24,18 @@
     transition: 0.7s ease;
 }
 .nav-link:hover{
-
+    color: #a6825e;
+}
+.nav-link.active{
+    color: #FB9C46;
+    border-bottom: 3px solid #FB9C46;
+    transition: none;
 }
 
 .log-btns-container{
     display: flex;
+    justify-content: space-between;
+    width: 256px;
 }
 .signup{
     display:flex;
@@ -41,7 +48,14 @@
     border-radius: 8px;
     background-color: #FB9C46;
     color: #FFFFFF;
-
+}
+.signup:hover{
+    color: #FFFFFF;
+    background-color:#a6825e;
+}
+.signup.active{
+    color: #FFFFFF;
+    border: none;
 }
 .login{
     display:flex;
@@ -55,8 +69,14 @@
     background-color: #407F55;
     color: #FFFFFF;
 }
-
-
+.login:hover{
+    color: #FFFFFF;
+    background-color: #3d6048;
+}
+.login.active{
+    color: #FFFFFF;
+    border: none;
+}
 .nav-branding{
     text-decoration: none;
     color: #393939;
@@ -76,6 +96,18 @@
     transition: all 0.3s ease-in-out;
     background-color: #FB9C46;
 }
+@media (min-width:769px) and (max-width:1024px){
+    .nav-menu{
+        gap:1em;
+    }
+    .navbar{
+        margin: 0 3.5em;
+    }
+    .log-btns-container{
+        width: 220px;
+    }
+}
+
 
 @media(max-width:768px){
     .hamburger{
@@ -91,8 +123,12 @@
     .hamburger.active .bar:nth-child(3){
          transform: translateY(-8px) rotate(-45deg);
     }
-
+    .navbar{
+        height: 77px;
+        margin: 0 25px;
+    }
     .nav-menu{
+        height: 100vh;
         position: fixed;
         right: -100%;
         top:77px;
@@ -103,9 +139,17 @@
         text-align: center;
         transition: 0.3s;
     }
-    .nav-items{
-
+    .nav-link{
+        width: 100%;
+        height: 54px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
     }
+    .nav-link.active{
+    border: none;
+    background-color: #F6F6F6;
+}
     .nav-menu.active{
         right: 0;
     }

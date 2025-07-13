@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./Home";
 import Lessons from "./Lessons";
 import FindTutors from "./FindTutors";
@@ -36,30 +36,30 @@ function Header() {
     <header>
       <BrowserRouter>
         <nav className="navbar">
-          <Link className="nav-branding" to={"/"}>
+          <NavLink className="nav-branding" to={"/"}>
             Tutorify
-          </Link>
+          </NavLink>
 
           <div className={nav_class}>
-            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/*"}>
+            <NavLink className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/*"}>
               Home
-            </Link>
-            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/lessons"}>
+            </NavLink>
+            <NavLink className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/lessons"}>
               Lessons
-            </Link>
-            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/findtutors"}>
+            </NavLink>
+            <NavLink className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/findtutors"}>
               Find Tutors
-            </Link>
-            <Link className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/aboutus"}>
+            </NavLink>
+            <NavLink className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/aboutus"}>
               About Us
-            </Link>
+            </NavLink>
             <div className="log-btns-container">
-              <Link className="nav-item nav-link login" onClick={() =>handleLinkClick()} to={"/login"}>
+              <NavLink className="nav-item nav-link login" onClick={() =>handleLinkClick()} to={"/login"}>
                 Login
-              </Link>
-              <Link className="nav-item nav-link signup" onClick={() =>handleLinkClick()} to={"/signup"}>
+              </NavLink>
+              <NavLink className="nav-item nav-link signup" onClick={() =>handleLinkClick()} to={"/signup"}>
                 Sign Up
-              </Link>
+              </NavLink>
             </div>
           </div>
 
