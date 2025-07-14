@@ -33,15 +33,16 @@ function Header() {
 
 
   return (
-    <header>
+    
       <BrowserRouter>
+      <header>
         <nav className="navbar">
           <NavLink className="nav-branding" to={"/"}>
             Tutorify
           </NavLink>
 
           <div className={nav_class}>
-            <NavLink className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/*"}>
+            <NavLink end className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/"}>
               Home
             </NavLink>
             <NavLink className="nav-item nav-link" onClick={() =>handleLinkClick()} to={"/lessons"}>
@@ -70,18 +71,20 @@ function Header() {
             <span className="bar"></span>
           </div>
         </nav>
-
+        </header>
+        <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/*" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/lessons" element={<Lessons />} />
           <Route path="/findtutors" element={<FindTutors />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
+        </main>
       </BrowserRouter>
-    </header>
+    
   );
 }
 
