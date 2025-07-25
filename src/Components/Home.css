@@ -1,0 +1,25 @@
+.section1{
+    display: flex;
+    
+}
+.orange-line{
+    width: 136px;
+    height: 1px;
+    background-color: #FF922F;
+}
+.graphic-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon1{
+    width:570.37px ;
+    height:646px ;
+}
+
+@media (min-width:769px) and (max-width:1024px){}
+@media(max-width:768px){
+    .orange-line{
+        width: 85px;
+    }
+}

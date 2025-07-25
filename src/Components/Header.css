@@ -10,10 +10,7 @@
         z-index: 1000;
         background-color: #FFFFFF;
     }
-    main{
-        position: relative;
-        margin-top: 181px;
-    }
+
 .navbar{
     height: 117px;
     border-bottom: 1px solid #C4C4C4;
@@ -41,6 +38,7 @@
     color: #FB9C46;
     border-bottom: 3px solid #FB9C46;
     transition: none;
+    
 }
 
 .log-btns-container{

@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import Home from "./Home";
-import Lessons from "./Lessons";
-import FindTutors from "./FindTutors";
-import AboutUs from "./AboutUs";
-import Login from "./Login";
-import SignUp from "./SignUp";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -34,7 +28,7 @@ function Header() {
 
   return (
     
-      <BrowserRouter>
+      <>
       <header>
         <nav className="navbar">
           <NavLink className="nav-branding" to={"/"}>
@@ -72,18 +66,8 @@ function Header() {
           </div>
         </nav>
         </header>
-        <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/lessons" element={<Lessons />} />
-          <Route path="/findtutors" element={<FindTutors />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-        </main>
-      </BrowserRouter>
+        
+      </>
     
   );
 }
