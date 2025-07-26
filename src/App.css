@@ -1,4 +1,17 @@
     main{
         position: relative;
-        margin-top: 181px;
+        margin: 181px 6.5em;
     }
+
+    
+@media (min-width:769px) and (max-width:1024px){
+    main{
+        margin:181px 3.5em;
+    }
+}
+
+@media(max-width:768px){
+    main{
+        margin:112px 25px;
+    }
+}
