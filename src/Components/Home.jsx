@@ -24,7 +24,7 @@ function Home() {
             </div>
             <h1>Learn From Home With <span className='orange'>The Best</span> Online Languange Tutors</h1>
             <p>Start speaking confidently with top tutors. Try free lessons today and see the difference:</p>
-            <Link>Try Free Lessons</Link>
+            <Link to={"/lessons"}>Try Free Lessons</Link>
           </div>
           <div className='icon1Div'>
             <img src={icon1} className='icon1' alt='Component1'/>
@@ -44,33 +44,64 @@ function Home() {
                 <p>We offer a wide variety of language lessons in many different languages, designed for all levels to support your learning and communication goals.</p>
                 <div>
                   <div>
-                    <img src={flag0} width={64} height={64} alt="france" />
-                    <img src={flag1} width={64} height={64} alt="china" />
-                    <img src={flag2} width={64} height={64} alt="germany" />
-                    <img src={flag3} width={64} height={64} alt="japan" />
-                    <img src={flag4} width={64} height={64} alt="russia" />
-                    <img src={flag5} width={64} height={64} alt="mexico" />
-                    <img src={flag6} width={64} height={64} alt="spain" />
-                    <Link>View All 
-                    <img src={arrow} alt="" />  
+                    <img src={flag0} width={64} height={64} alt="flag" />
+                    <img src={flag1} width={64} height={64} alt="flag" />
+                    <img src={flag2} width={64} height={64} alt="flag" />
+                    <img src={flag3} width={64} height={64} alt="flag" />
+                    <img src={flag4} width={64} height={64} alt="flag" />
+                    <img src={flag5} width={64} height={64} alt="flag" />
+                    <img src={flag6} width={64} height={64} alt="flag" />
+                    <Link to={'/lessons'}>View All 
+                    <img src={arrow} alt="arrow" />  
                     </Link>
                     </div>
                 </div>
             </div>
       </section>
       <section className='section3'>
+            <div className='container3'>
+              <h3>Purchase your awesome lessons and find your tutors </h3>
+              <p>Buy the perfect lessons for you and discover skilled tutors worldwide to enhance your language learning journey with flexibility and support.</p>
+              <div>
+                <Link to={"/lessons"} className='lessonBtn'>Book Your Lessons</Link>
+                <Link to={"/findtutors"} className='tutorBtn'>Find Your Tutors</Link>
+              </div>
+            </div>
+            <div className='container3-right'>
+              <img src={icon2} alt="icon2" className='icon2' />
+            </div>
+      </section>
+      <section className='section4'>
+            <div>
+              <img src="" alt="" />
+            </div>
             <div>
               <h3></h3>
               <p></p>
-              <div>
-                <Link></Link>
-                <Link></Link>
-              </div>
+              <ul>
+                <li>
+                  <img src="" alt="" />
+                 <dl>
+                    <dt></dt>
+                  <dd></dd>
+                  </dl>
+                </li>
+                <li>
+                  <img src="" alt="" />
+                   <dl>
+                    <dt></dt>
+                  <dd></dd>
+                  </dl>
+                </li>
+                <li>
+                  <img src="" alt="" />
+                  <dl>
+                    <dt></dt>
+                  <dd></dd>
+                  </dl>
+                </li>
+              </ul>
             </div>
-            <div></div>
-      </section>
-      <section>
-
       </section>
       <section>
 

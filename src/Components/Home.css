@@ -96,25 +96,105 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
     align-items: center;
+    gap: 2vw;
 }
-.container2-right > div > div > img{
-   
-}
+
 .container2-right > div > div > a{
     display: flex;
     text-decoration: none;
     color: #FB9C46;
     font-size: 18px;
 }
+/*section3*/
 
+.section3{
+    margin-top: 80px;
+    display: flex;
+}
+.container3{
+    margin-top: 155px;
+}
+.container3 h3{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 3.5%;
+}
+.container3 p{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height:160%;
+    color: #6C6C6C;
+}
+.container3 div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.lessonBtn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 199px;
+    height: 61px;
+    background-color:#FB9C46;
+    border-radius: 15px;
+}
+.lessonBtn:hover{
+     background-color:#a6825e;
+}
+.tutorBtn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FB9C46;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 199px;
+    height: 61px;
+    border: 3px solid #FB9C46;
+     border-radius: 15px;
+}
+.icon2{
+     width: 50vw;
+}
+   
+/*tablet styles*/
 @media (min-width:769px) and (max-width:1024px){
         .icon1{
         width: 55vw;
         height: 90vw;
     }
+    .container2-right > div > div {
+    grid-template-columns: 14vw 14vw 14vw 16vw;
+    column-gap: 1vw;
+    row-gap: 5vw;
+    }
+    .container3{
+        margin-top: 10vh;
+    }
+    .container3 p{
+        margin: 2vh 0;
+    }
+    .container3 >div{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 15vh;
+    }
+    .lessonBtn{
+        width: 100%;
+    }
+    .tutorBtn{
+        width: 100%;
+    }
 }
 
-
+/*mobile styles*/
 @media(max-width:768px){
     .section1{
         flex-direction: column;
@@ -155,10 +235,40 @@
         width: 70vw;
         margin-bottom: 5vh;
     }
+    .container2 h2{
+        font-size: 30px;
+    }
+    .container2-right p{
+        font-size: 12px;
+    }
     .container2-right > div > div {
             grid-template-columns: 14vw 14vw 14vw 16vw;
             gap: 10vw;
-            
-
+    }
+    /*section3*/
+    .section3{
+        flex-direction: column;
+    }
+    .container3{
+        margin-top: 7vh;
+    }
+    .container3 h3{
+        font-size: 30px;
+    }
+    .container3 p{
+        font-size: 12px;
+    }
+    .lessonBtn{
+        font-size: 12px;
+        min-width: 150px;
+        width: 40vw;
+    }
+    .tutorBtn{
+        font-size: 12px;
+        min-width: 150px;
+        width: 40vw;
+    }
+    .icon2{
+        width: 100vw;
     }
 }
