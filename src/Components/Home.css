@@ -1,3 +1,4 @@
+/*section1*/
 .section1{
     display: flex;
 }
@@ -31,9 +32,9 @@
 }
 .orange{
     color: #FB9C46;
-    display: inline;
 }
 .orange-line{
+    margin-left: 18px;
     width: 136px;
     height: 1px;
     background-color: #FF922F;
@@ -52,6 +53,58 @@
 .icon1{
     width:570.37px ;
     height:646px ;
+}
+/*section2*/
+.section2{
+    margin-top: 90px;
+    display: flex;
+    
+}
+.container2{
+ width: 40vw;
+}
+.container2 p{
+    color:#FB9C46;
+    font-size: 16px;
+    font-weight:600;
+}
+.container2 h2{
+    margin: 10px 0;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing:3.5%;
+}
+.container2 > div{
+    display: flex;
+    align-items: center;
+}
+.container2 > div p{
+    font-size: 18px;
+}
+.container2-right p{
+    color: #6C6C6C;
+    font-size: 14px;
+    line-height: 200%;
+    margin-bottom: 30px;
+}
+.container2-right > div{
+    display: flex;
+    justify-content: center;
+}
+.container2-right > div > div{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    align-items: center;
+}
+.container2-right > div > div > img{
+   
+}
+.container2-right > div > div > a{
+    display: flex;
+    text-decoration: none;
+    color: #FB9C46;
+    font-size: 18px;
 }
 
 @media (min-width:769px) and (max-width:1024px){
@@ -93,5 +146,19 @@
     .icon1{
         width: 75vw;
         height: 90vw;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container2{
+        width: 70vw;
+        margin-bottom: 5vh;
+    }
+    .container2-right > div > div {
+            grid-template-columns: 14vw 14vw 14vw 16vw;
+            gap: 10vw;
+            
+
     }
 }
