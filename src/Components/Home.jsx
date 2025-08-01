@@ -11,6 +11,9 @@ import flag5 from '../assets/flag5.svg'
 import flag6 from '../assets/flag6.svg'
 import arrow from '../assets/arrow.svg'
 import icon2 from '../assets/icon2.svg'
+import icon3 from '../assets/icon3.svg'
+import checkbox from '../assets/checkbox.svg'
+
 
 
 function Home() {
@@ -73,31 +76,31 @@ function Home() {
       </section>
       <section className='section4'>
             <div>
-              <img src="" alt="" />
+              <img src={icon3} className='icon3' alt="icon3" />
             </div>
-            <div>
-              <h3></h3>
-              <p></p>
+            <div className='container4'>
+              <h3>What Will You  <span className='green'>Get</span> ?</h3>
+              <p>Get access to personalized lessons, real conversation practice, and a supportive global language community, including:</p>
               <ul>
                 <li>
-                  <img src="" alt="" />
+                  <img src={checkbox} alt="checkbox" />
                  <dl>
-                    <dt></dt>
-                  <dd></dd>
+                    <dt>1-on-1 lessons in more than 150 languages</dt>
+                  <dd>-Learn from certified teachers with proven experience... </dd>
                   </dl>
                 </li>
                 <li>
-                  <img src="" alt="" />
+                  <img src={checkbox} alt="checkbox" />
                    <dl>
-                    <dt></dt>
-                  <dd></dd>
+                    <dt>Practice for free with the italki community</dt>
+                  <dd>-Develop your language skills by building connections with others...</dd>
                   </dl>
                 </li>
                 <li>
-                  <img src="" alt="" />
+                  <img src={checkbox} alt="checkbox" />
                   <dl>
-                    <dt></dt>
-                  <dd></dd>
+                    <dt>Take learning beyond the classroom</dt>
+                  <dd>-Learn from certified teachers with proven experience...</dd>
                   </dl>
                 </li>
               </ul>

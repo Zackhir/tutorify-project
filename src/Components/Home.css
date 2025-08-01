@@ -98,7 +98,9 @@
     align-items: center;
     gap: 2vw;
 }
-
+.container2-right div div img:hover{
+    filter: brightness(50%);
+}
 .container2-right > div > div > a{
     display: flex;
     text-decoration: none;
@@ -164,6 +166,64 @@
      width: 50vw;
 }
    
+/*section4*/
+.section4{
+    margin-top: 8vh;
+    display: flex;
+}
+.container4{
+    width: 40vw;
+    margin-left: 5vw;
+}
+.container4 h3{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 3.5%;
+    color: #393939;
+}
+.green{
+    color: #058E6E;
+}
+.container4 p{
+    font-size: 18px;
+    line-height: 160%;
+    color: #6C6C6C;
+    z-index: 1000;
+}
+.container4 ul{
+    background-color: #e3f2ef;
+    box-shadow: -2vw 0 30px 35px #e3f2ef, 0 0 30px 35px #e3f2ef;
+}
+.container4 ul li{
+    margin-top: 3vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 497px;
+    height: 104px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+.container4 ul li img{
+    width: 44px;
+    height: 44px;
+}
+.container4 ul li dl{
+    width: 80%;
+}
+.container4 ul li dl dt{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 170%;
+    color: #393939;
+}
+.container4 ul li dl dd{
+    font-size: 14px;
+    line-height: 160%;
+    color: #8D8D8D;
+}
 /*tablet styles*/
 @media (min-width:769px) and (max-width:1024px){
         .icon1{
@@ -269,6 +329,59 @@
         width: 40vw;
     }
     .icon2{
-        width: 100vw;
+        width: 100%;
+    }
+    /*section4*/
+    .section4{
+        flex-direction: column-reverse;
+        width: 85vw;
+    }
+    .icon3{
+        margin-top: 8vh;
+        width: 100%;
+    }
+    .container4{
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .container4 h3{
+        margin-top: 3vh;
+        text-align: center;
+        font-size: 30px;
+    }
+    .container4 p{
+        margin-top: 3vh;
+        text-align: end;
+        font-size: 12px;
+        line-height: 200%;
+        color: #90A3B4;
+    }
+    .container4 ul{
+        margin-top: 2vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+        box-sizing: border-box;
+        box-shadow: 0;
+    }
+    .container4 ul li{
+        width: 325px;
+        height: auto;
+        padding: 3vh 1vw;/*dint work*/
+        box-sizing: border-box;
+    }
+    .container4 ul li img{
+        width: 29px;
+        height: 29px;
+    }
+    .container4 ul li dl dt{
+        font-size: 15px;
+        line-height: 170%;
+    }
+    .container4 ul li dl dd{
+        font-size: 10px;
+        line-height: 200%;
     }
 }
