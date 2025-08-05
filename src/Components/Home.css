@@ -194,6 +194,7 @@
     line-height: 160%;
     color: #6C6C6C;
     z-index: 1000;
+    
 }
 .container4 ul{
     background-color: #e3f2ef;
@@ -288,6 +289,63 @@
     width: 36vw ;
     height: 44vh;
 }
+/*section6*/
+
+/*section7*/
+.section7{
+    border-radius: 8px;
+    background-image: linear-gradient(to right,#ff912f,#f4bf63);
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+}
+.container7{
+    margin-top: 12vh;
+    width: 27.5vw;
+}
+.container7 h3{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.container7 p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight:500;
+    line-height:32px;
+    letter-spacing: 0.3px;
+}
+.container7 > p{
+    margin-top: 3vh;
+}
+.container7 div{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+}
+.container7 div p{
+    margin-left: 1vw;
+    color: #ffffff;
+    text-decoration: underline;
+    line-height: 32px;
+}
+.section7 a{
+    margin-top: 15vh;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #FB9C46;
+    background-color: #FFFFFF;
+    height: 60px;
+    width:259px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*tablet styles*/
 @media (min-width:769px) and (max-width:1024px){
@@ -316,6 +374,14 @@
     }
     .tutorBtn{
         width: 100%;
+    }
+    .section7{
+        padding-bottom: 2vh;
+        min-height: 50vh;
+        box-sizing: border-box;
+    }
+    .container7{
+        width: 37vw;
     }
 }
 
@@ -499,5 +565,30 @@
         margin-top: 5vh;
         width: 100%;
         height: 60vh;
+    }
+    /*section7*/
+    .section7{
+        flex-direction: column;
+        justify-content: start;
+        width: 100vw;
+        height: 75vh; 
+        margin-left: calc(-50vw + 50%);
+        box-sizing: border-box;
+    }
+    .container7{
+        width: 84vw;
+        margin:10vh 25px 0 25px;
+    }
+    .container7 h3{
+        font-size: 30px;
+    }
+    .container7 p{
+        font-size: 12px;
+    }
+    .container7 div{
+        margin-top: 2vh;
+    }
+    .section7 a{
+        margin: 10vh 0 0 25px;
     }
 }

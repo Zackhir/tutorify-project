@@ -17,6 +17,7 @@ import icon4 from '../assets/icon4.svg'
 import ellipse1 from '../assets/ellipse1.svg'
 import ellipse2 from '../assets/ellipse2.svg'
 import ellipse3 from '../assets/ellipse3.svg'
+import icon6 from '../assets/icon6.svg'
 
 
 
@@ -142,14 +143,28 @@ function Home() {
               <img src={icon4} className='icon4' alt="icon4" />
             </div>
       </section>
-      <section>
+      <section className='section6'>
+            <div className="container6">
+              <h3>Edu Smart it's about mastering a timeless skill</h3>
+              <p>cultivating new perspectives, and connecting with fascinating people from around the world.</p>
+            </div>
+            <div className="container6-right">
 
+            </div>
       </section>
       <section>
 
       </section>
-      <section>
-
+      <section className='section7' >
+          <div className="container7">
+              <h3>Learn more than just a language <span>&#128525;</span></h3>
+              <p>Over 100,000 students join us monthly</p>
+              <div>
+                <img src={icon6} alt="icon6" />
+                <p>and others</p>
+              </div>
+          </div>
+          <Link>Get your free lessons now</Link>
       </section>
     </div>
   )
