@@ -1,7 +1,7 @@
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './Components/Header'
-import Home from "./Components/Home";
+import Home from "./pages/Home/Home";
 import Lessons from "./Components/Lessons";
 import FindTutors from "./Components/FindTutors";
 import AboutUs from "./Components/AboutUs";

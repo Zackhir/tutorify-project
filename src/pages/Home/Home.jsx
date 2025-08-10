@@ -1,23 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
-import icon1 from '../assets/icon1.svg'
-import flag0 from '../assets/flag0.svg'
-import flag1 from '../assets/flag1.svg'
-import flag2 from '../assets/flag2.svg'
-import flag3 from '../assets/flag3.svg'
-import flag4 from '../assets/flag4.svg'
-import flag5 from '../assets/flag5.svg'
-import flag6 from '../assets/flag6.svg'
-import arrow from '../assets/arrow.svg'
-import icon2 from '../assets/icon2.svg'
-import icon3 from '../assets/icon3.svg'
-import checkbox from '../assets/checkbox.svg'
-import icon4 from '../assets/icon4.svg'
-import ellipse1 from '../assets/ellipse1.svg'
-import ellipse2 from '../assets/ellipse2.svg'
-import ellipse3 from '../assets/ellipse3.svg'
-import icon6 from '../assets/icon6.svg'
+import icon1 from '../../assets/icon1.svg'
+import flag0 from '../../assets/flag0.svg'
+import flag1 from '../../assets/flag1.svg'
+import flag2 from '../../assets/flag2.svg'
+import flag3 from '../../assets/flag3.svg'
+import flag4 from '../../assets/flag4.svg'
+import flag5 from '../../assets/flag5.svg'
+import flag6 from '../../assets/flag6.svg'
+import arrow from '../../assets/arrow.svg'
+import icon2 from '../../assets/icon2.svg'
+import icon3 from '../../assets/icon3.svg'
+import checkbox from '../../assets/checkbox.svg'
+import icon4 from '../../assets/icon4.svg'
+import ellipse1 from '../../assets/ellipse1.svg'
+import ellipse2 from '../../assets/ellipse2.svg'
+import ellipse3 from '../../assets/ellipse3.svg'
+import icon6 from '../../assets/icon6.svg'
+import Testimonials from './sections/Testimonials'
 
 
 
@@ -143,15 +144,7 @@ function Home() {
               <img src={icon4} className='icon4' alt="icon4" />
             </div>
       </section>
-      <section className='section6'>
-            <div className="container6">
-              <h3>Edu Smart it's about mastering a timeless skill</h3>
-              <p>cultivating new perspectives, and connecting with fascinating people from around the world.</p>
-            </div>
-            <div className="container6-right">
-
-            </div>
-      </section>
+        <Testimonials/>
       <section>
 
       </section>

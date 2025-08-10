@@ -1,0 +1,54 @@
+.testimonials{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 40vw;
+}
+.container h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.3px;
+    color: #FB9C46;
+}
+.container p{
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    color: #90A3B4;
+}
+.mySwiper{
+    width: 40vw;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.mySwiper .swiper-button-prev{
+    min-width: 121px !important;
+    min-height: 121px !important;
+    width: 8.4vw;
+    height: 11.2vh;
+    background-image: url(../../../assets/btn-prev.svg) !important;
+      background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+}
+.mySwiper .swiper-button-next {
+    min-width: 121px !important;
+    min-height: 121px !important;
+      width: 8.4vw;
+    height: 11.2vh;
+    background-image: url(../../../assets/btn-next.svg) !important;
+      background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+}
+.mySwiper .swiper-button-next:hover,
+.mySwiper .swiper-button-prev:hover{
+    filter: brightness(50%);
+}
+.mySwiper .swiper-button-next:after,
+.mySwiper .swiper-button-prev::after {
+    content: '' !important; /* remove default arrow */
+}

@@ -162,6 +162,10 @@
     border: 3px solid #FB9C46;
      border-radius: 15px;
 }
+.tutorBtn:hover{
+    color: #ffffff;
+    background-color:#FB9C46 ;
+}
 .icon2{
      width: 50vw;
 }
@@ -325,6 +329,9 @@
     display: flex;
     align-items: center;
 }
+.container7 div img{
+    cursor: pointer;
+}
 .container7 div p{
     margin-left: 1vw;
     color: #ffffff;
@@ -345,6 +352,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.section7 a:hover{
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    transition: 0.7s ease;
 }
 
 /*tablet styles*/
