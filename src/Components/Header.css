@@ -59,8 +59,9 @@
     color: #FFFFFF;
 }
 .signup:hover{
-    color: #FFFFFF;
-    background-color:#a6825e;
+    color: #FB9C46;
+    background-color: transparent;
+    border: 3px solid #FB9C46;
 }
 .signup.active{
     color: #FFFFFF;
@@ -79,8 +80,9 @@
     color: #FFFFFF;
 }
 .login:hover{
-    color: #FFFFFF;
-    background-color: #3d6048;
+    color: #407F55;
+    background-color: transparent;
+    border: 3px solid #407F55;
 }
 .login.active{
     color: #FFFFFF;

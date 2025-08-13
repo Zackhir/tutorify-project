@@ -1,6 +1,7 @@
 import React from 'react'
 import './HeroSection.css'
 import icon1 from '../../../assets/icon1.svg'
+import { Link } from 'react-router-dom'
 
 
 function HeroSection() {
@@ -19,6 +20,7 @@ function HeroSection() {
             <img src={icon1} className='icon1' alt='Component1'/>
           </div>
       </section>
+      
 
   )
 }
