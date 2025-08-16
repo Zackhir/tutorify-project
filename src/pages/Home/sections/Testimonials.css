@@ -1,5 +1,6 @@
 .testimonials{
-    margin-top: 10vh;
+    margin-top: 12vh;
+    margin-bottom: 14vh;
     display: flex;
     justify-content: space-between;
 }
@@ -14,11 +15,13 @@
     color: #FB9C46;
 }
 .container p{
+    margin-top: 3.5vh;
     font-size: 16px;
     line-height: 32px;
     letter-spacing: 0.3px;
     color: #90A3B4;
 }
+/*swiper*/
 .mySwiper{
     width: 40vw;
     margin-left: 0 !important;
@@ -37,8 +40,8 @@
 .mySwiper .swiper-button-next {
     min-width: 121px !important;
     min-height: 121px !important;
-      width: 8.4vw;
-    height: 11.2vh;
+    width: 8.4vw !important;
+    height: 11.2vh !important;
     background-image: url(../../../assets/btn-next.svg) !important;
       background-size: contain !important;
   background-repeat: no-repeat !important;
@@ -51,4 +54,120 @@
 .mySwiper .swiper-button-next:after,
 .mySwiper .swiper-button-prev::after {
     content: '' !important; /* remove default arrow */
+}
+/*pagination bullets*/
+.mySwiper .swiper-pagination-bullet{
+    background-color: #90A3B4;
+}
+.mySwiper .swiper-pagination-bullet-active {
+    background-color: #FB9C46;
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 5vh !important; /* Pushes it down */
+}
+
+/**/
+.review-container{
+    margin-left: 3.5vw;
+    display: flex;
+    align-items: start;
+}
+.review{
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+}
+.review > p{
+    margin-top: 1vh;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 32px;
+    color: #90A3B4;
+}
+.review-user{
+    margin-top: 2vh;
+    display: flex;
+}
+.review-user img{
+
+    width: 3.8vw;
+    height: 3.8vw;
+    border-radius: 50%;
+}
+.review-user-info{
+    margin-left: 1vw;
+}
+.review-user-info h6{
+    color: #FB9C46;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.review-user-info p{
+    margin-top: 0.5vh;
+    color:#90A3B4;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+@media(max-width:768px) {
+    .testimonials{
+        margin-top: 5vh;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .container h3{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .container p{
+        font-size: 12px;
+    }
+    .mySwiper{
+        margin-top: 7vh;
+        width: 100%;
+        height: 30vh;
+    }
+    .mySwiper .swiper-button-next,
+    .mySwiper .swiper-button-prev {
+    min-width: 80px !important;
+    min-height: 80px !important;
+    width: 21.5vw !important;
+    height: 12.4vh !important;
+    }
+     .mySwiper .swiper-button-prev {
+        left: 0;
+     }
+     .mySwiper .swiper-button-next{
+        right: 0;
+     }
+     .review-container > img{
+        width: 5.8vw;
+     }
+     .review{
+        margin-top: 0.5vh;
+        margin-left: 6vw;
+     }
+     .review > p{
+        font-size: 12px;
+        line-height: 200%;
+     }
+     .review-user img{
+        min-width: 37px;
+        min-height: 37px;
+        width: 10vw;
+        height: 10vw;
+     }
+     .review-user-info h6{
+        font-size: 10px;
+        line-height: 5.4vw;
+     }
+     .review-user-info p{
+        line-height: 5.4vw;
+         margin-top: 0;
+        font-size: 8px;
+     }
+     
 }
