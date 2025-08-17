@@ -7,7 +7,7 @@ import FindTutors from "./Components/FindTutors";
 import AboutUs from "./Components/AboutUs";
 import Login from "./Components/Login";
 import SignUp from "./Components/SignUp";
-import Footer from './Components/Footer'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 

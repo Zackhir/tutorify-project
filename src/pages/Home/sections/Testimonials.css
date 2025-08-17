@@ -142,6 +142,7 @@
      }
      .mySwiper .swiper-button-next{
         right: 0;
+        /*-5vw*/
      }
      .review-container > img{
         width: 5.8vw;

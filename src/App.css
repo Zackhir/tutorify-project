@@ -1,4 +1,7 @@
-    main{
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+main{
         position: relative;
         margin: 14.8vw 6.5em;
     }
