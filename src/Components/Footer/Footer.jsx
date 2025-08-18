@@ -52,7 +52,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="container">
+      <div className="footer-container">
         {/* Logo Section */}
         <div className="logo-container">
           <Link className="heading">Tutorify</Link>

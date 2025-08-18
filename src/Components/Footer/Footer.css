@@ -5,12 +5,12 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-.container{
+.footer-container{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.container >div > div{
+.footer-container >div > div{
     display: flex;
     flex-direction: column;
 }
@@ -70,19 +70,19 @@ footer >p{
     footer p{
         font-weight: 500;
     }
-     .container {
+     .footer-container {
     flex-direction: column;
     align-items: flex-start;
   }
  
-  .container > div {
+  .footer-container > div {
     width: 100%;
   }
   .logo-container > div{
     margin-bottom: 3vh;
   }
 
-  .container .heading-btn {
+  .footer-container .heading-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,7 +119,7 @@ footer >p{
   .mobile-collapse {
     display: none !important;
     flex-direction: column;
-    margin-left: 10px;
+    margin:1vh 0 1vh 4vw;
   }
 
   .mobile-collapse.show {

@@ -5,7 +5,8 @@
     background-image: linear-gradient(to right,#ff912f,#f4bf63);
     display: flex;
     justify-content: space-around;
-    height: 40vh;
+    padding-bottom: 10vh;
+    padding-top: 2vh;
 }
 .container7{
     margin-top: 12vh;
@@ -79,10 +80,11 @@
     .section7{
         flex-direction: column;
         justify-content: start;
-        width: 100vw;
-        height: 75vh; 
+        width: 100vw; 
         margin-left: calc(-50vw + 50%);
         box-sizing: border-box;
+        padding-bottom: 15vh;
+        padding-top: 0;
     }
     .container7{
         width: 84vw;
