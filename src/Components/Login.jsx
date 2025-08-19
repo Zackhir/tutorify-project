@@ -2,6 +2,7 @@ import React, { useState }  from 'react'
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import './Login.css'
 
 function Login() {
   const [email, setEmail] = useState();
@@ -22,16 +23,14 @@ function Login() {
 
 
   return (
-    <div>
-          <div>
-            <h2>Login</h2>
+    <div className='flex justify-center'>
+          <div className='flex flex-col justify-center items-center rounded-2xl loginPage'>
+            <h2>LogIn</h2>
             <form onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="email">
-                  <strong>Email</strong>
-                </label>
                 <input
                   type="email"
+                  className='bg-transparent'
                   placeholder="Enter Email"
                   autoComplete="off"
                   name="email"
@@ -39,18 +38,16 @@ function Login() {
                 />
               </div>
               <div>
-                <label htmlFor="password">
-                  <strong>Password</strong>
-                </label>
                 <input
                   type="password"
+                  className='bg-transparent'
                   placeholder="Enter Password"
                   autoComplete="off"
                   name="password"
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
-              <button type="submit">Login</button>
+              <button type="submit">LogIn</button>
             </form>
             <p>Don't have an account</p>
             <Link to={"/signup"}>Register</Link>

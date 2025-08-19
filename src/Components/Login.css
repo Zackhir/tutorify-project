@@ -1,0 +1,107 @@
+.loginPage {
+    background-image: linear-gradient(to right,#ff912f,#f4bf63);
+  width: 30vw;
+  min-width: 415px;
+  padding: 4vh 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.loginPage h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.3px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.loginPage form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 1.5rem;
+}
+
+.loginPage input {
+    width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.loginPage input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.loginPage input:focus {
+  border-bottom: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.loginPage button {
+    margin-top: 2vh;
+  background-color: white;
+  color: #FB9C46;
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginPage button:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+.loginPage p {
+  color: white;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  margin-top: 1.5rem;
+}
+
+.loginPage a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.loginPage a:hover {
+  color: #f1f1f1;
+}
+@media(max-width:768px){
+    .loginPage{
+        width: 100%;
+        min-width: 320px;
+        gap: 1rem;
+    }
+    .loginPage h2{
+        font-size: 30px;
+    }
+    .loginPage input{
+          padding: 5px 5px;
+    }
+    .loginPage input::placeholder {
+  font-size: 14px;
+}
+    .loginPage p{
+        font-size: 12px;
+    }
+}

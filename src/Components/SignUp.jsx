@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import './SignUp.css'
 
 function SignUp() {
   const [name, setName] = useState();
@@ -20,14 +21,11 @@ function SignUp() {
   };
 
   return (
-    <div>
-      <div>
+    <div className="flex justify-center ">
+      <div className="rounded-2xl signupPage">
         <h2>Register</h2>
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">
-              <strong>Name</strong>
-            </label>
             <input
               type="text"
               placeholder="Enter Name"
@@ -37,9 +35,6 @@ function SignUp() {
             />
           </div>
           <div>
-            <label htmlFor="email">
-              <strong>Email</strong>
-            </label>
             <input
               type="email"
               placeholder="Enter Email"
@@ -49,9 +44,6 @@ function SignUp() {
             />
           </div>
           <div>
-            <label htmlFor="password">
-              <strong>Password</strong>
-            </label>
             <input
               type="password"
               placeholder="Enter Password"
