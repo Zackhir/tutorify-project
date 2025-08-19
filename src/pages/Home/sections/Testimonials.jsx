@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 import './Testimonials.css'
 import stars from '../../../assets/review-stars.svg'
 import quotation from '../../../assets/quotation.svg'
-
+import { motion } from "framer-motion";
 
 function Testimonials() {
     const [testimonials, setTestimonials] = useState([]);
@@ -64,6 +64,12 @@ function Testimonials() {
   }, []);
 
   return (
+                <motion.section
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
     <section className='testimonials'>
             <div className="container">
               <h3>Edu Smart it's about mastering a timeless skill</h3>
@@ -98,6 +104,7 @@ function Testimonials() {
          ))}
       </Swiper>
       </section>
+      </motion.section>
   )
 }
 

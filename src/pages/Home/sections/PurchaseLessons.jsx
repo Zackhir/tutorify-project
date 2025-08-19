@@ -2,9 +2,16 @@ import React from "react";
 import "./PurchaseLessons.css";
 import { Link } from 'react-router-dom'
 import icon2 from '../../../assets/icon2.svg'
+import { motion } from "framer-motion";
 
 function PurchaseLessons() {
   return (
+            <motion.section
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
     <section className="section3">
       <div className="container3">
         <h3>Purchase your awesome lessons and find your tutors </h3>
@@ -26,6 +33,7 @@ function PurchaseLessons() {
         <img src={icon2} alt="icon2" className="icon2" />
       </div>
     </section>
+    </motion.section>
   );
 }
 

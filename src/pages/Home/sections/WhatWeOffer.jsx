@@ -10,9 +10,16 @@ import flag4 from '../../../assets/flag4.svg'
 import flag5 from '../../../assets/flag5.svg'
 import flag6 from '../../../assets/flag6.svg'
 import arrow from '../../../assets/arrow.svg'
+import { motion } from "framer-motion";
 
 function WhatWeOffer() {
   return (
+                    <motion.section
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6 }}
+                    >
     <section className='section2'>
                 <div className='container2'>
                   <p>What do you want to learn ?</p>
@@ -40,6 +47,7 @@ function WhatWeOffer() {
                     </div>
                 </div>
           </section>
+          </motion.section>
   )
 }
 

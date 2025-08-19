@@ -4,9 +4,16 @@ import icon4 from '../../../assets/icon4.svg'
 import ellipse1 from '../../../assets/ellipse1.svg'
 import ellipse2 from '../../../assets/ellipse2.svg'
 import ellipse3 from '../../../assets/ellipse3.svg'
+import { motion } from "framer-motion";
 
 function HowItWorks() {
   return (
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
          <section className='section5'>
             <div className='container5'>
               <h3>Here’s how it <span className='orange'>works</span></h3>
@@ -39,6 +46,7 @@ function HowItWorks() {
               <img src={icon4} className='icon4' alt="icon4" />
             </div>
       </section>
+      </motion.section>
   )
 }
 

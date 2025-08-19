@@ -2,9 +2,16 @@ import React from 'react'
 import './WhatWillYouGet.css'
 import icon3 from '../../../assets/icon3.svg'
 import checkbox from '../../../assets/checkbox.svg'
+import { motion } from "framer-motion";
 
 function WhatWillYouGet() {
   return (
+                        <motion.section
+                          initial={{ opacity: 0, y: 50 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.6 }}
+                        >
           <section className='section4'>
                 <div>
                   <img src={icon3} className='icon3' alt="icon3" />
@@ -37,6 +44,7 @@ function WhatWillYouGet() {
                   </ul>
                 </div>
           </section>
+          </motion.section>
   )
 }
 
