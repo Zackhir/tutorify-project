@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import './Login.css'
+import { motion } from "framer-motion";
 
 function Login() {
   const [email, setEmail] = useState();
@@ -23,6 +24,12 @@ function Login() {
 
 
   return (
+            <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
     <div className='flex justify-center'>
           <div className='flex flex-col justify-center items-center rounded-2xl loginPage'>
             <h2>LogIn</h2>
@@ -53,6 +60,7 @@ function Login() {
             <Link to={"/signup"}>Register</Link>
           </div>
         </div>
+        </motion.section>
   )
 }
 

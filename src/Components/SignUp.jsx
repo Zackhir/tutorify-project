@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import './SignUp.css'
+import { motion } from "framer-motion";
 
 function SignUp() {
   const [name, setName] = useState();
@@ -21,6 +22,12 @@ function SignUp() {
   };
 
   return (
+        <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
     <div className="flex justify-center ">
       <div className="rounded-2xl signupPage">
         <h2>Register</h2>
@@ -58,6 +65,7 @@ function SignUp() {
         <Link to={"/login"}>Login</Link>
       </div>
     </div>
+    </motion.section>
   );
 }
 
