@@ -3,7 +3,7 @@ import './App.css'
 import Header from './Components/Header'
 import Home from "./pages/Home/Home";
 import Lessons from "./Components/Lessons";
-import FindTutors from "./Components/FindTutors";
+import FindTutors from "./pages/FindTutors/FindTutors";
 import AboutUs from "./Components/AboutUs";
 import Login from "./Components/Login";
 import SignUp from "./Components/SignUp";

@@ -1,0 +1,82 @@
+.filter_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.filter_container select{
+    appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+  padding-right: 2rem;   
+    width: 24.8vw;
+    height: 7vh;    
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(91, 91, 101, 0.2) 0px 7px 29px 0px;
+    background: url(../../assets/show.png)  no-repeat 1.5vw center,  url("../../assets/arrow_drop.svg") no-repeat right 1.5vw center;
+    padding-left: 3vw;
+}
+
+.search_bar{
+    width: 56vw;
+   
+}
+.search_bar input{
+    font-size: 14px;
+    width: 100%;
+    height: 7vh;
+         border-radius: 10px;
+     border: none;
+     box-shadow: rgba(88, 88, 98, 0.2) 0px 7px 29px 0px;
+     background: url(../../assets/search2.svg)  no-repeat 12px center;
+     background-repeat: no-repeat;
+     padding-left: 35px;
+
+}
+.search_bar input::placeholder{
+    font-size: 14px;
+    color: #CCCCCC;
+    padding-left: 1vw;
+}
+.search_bar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 38vw;
+    bottom: 6vh;
+    background-color: #FB9C46;
+    border-radius: 10px;
+    border: none;
+    width: 17vw;
+    height: 5vh;
+    color: white;
+    font-size: 14px;
+}
+.search_bar button img{
+    margin-right: 1vw;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-between;
+}
+.tag{
+    height: 5.5vh;
+    border-radius: 5px;
+    color: #979797;
+    box-shadow: rgba(88, 88, 98, 0.2) 0px 7px 29px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1vw;
+
+}
+
+@media(max-width:768px){
+    .search_bar button{
+        display: none;
+    }
+}
