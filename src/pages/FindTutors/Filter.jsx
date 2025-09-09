@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import searchIcon from "../../assets/search.svg";
 import styles from "./Filter.module.css";
 
@@ -9,16 +9,17 @@ function Filter() {
         <div className={styles.search_bar}>
           <input
             type="search"
-            value=""
-            placeholder="  Lessons Name               | Tutor Name"
+            placeholder="Lessons Name               | Tutor Name"
           />
           <button>
             <img src={searchIcon} alt="" />
             Search
           </button>
         </div>
+        <div className={styles.mobile_filters_wrapper} >
+        <button className={styles.mobile_filters}>Filter</button>
         <select name="" id="">
-          <option value="" disabled selected style={{color:'#cccccc'}}>
+          <option value="" disabled selected>
             Popular Lesson
           </option>
           <option value="basics">Conversational Basics</option>
@@ -31,16 +32,18 @@ function Filter() {
           <option value="exam">Exam Preparation</option>
           <option value="speaking">Listening & Speaking Practice</option>
         </select>
+        </div>
       </div>
-      <div class={styles.tags}>
-        <span class={styles.tag}>Also Speaks</span>
-        <span class={styles.tag}>From</span>
-        <span class={styles.tag}>Price</span>
-        <span class={styles.tag}>Native Speaker</span>
-        <span class={styles.tag}>Teacher types</span>
-        <span class={styles.tag}>Category</span>
-        <span class={styles.tag}>Instant lesson</span>
-        <span class={styles.tag}>Auto-accept</span>
+      <div className={styles.tags}>
+        <button className={styles.tag}>Also Speaks</button>
+
+        <button className={styles.tag}>From</button>
+        <button className={styles.tag}>Price</button>
+        <button className={styles.tag}>Native Speaker</button>
+        <button className={styles.tag}>Teacher types</button>
+        <button className={styles.tag}>Category</button>
+        <button className={styles.tag}>Instant lesson</button>
+        <button className={styles.tag}>Auto-accept</button>
       </div>
     </>
   );
