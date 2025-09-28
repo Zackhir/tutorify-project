@@ -1,0 +1,138 @@
+.teacher_card{
+    margin: 4vh 0;
+    display: flex;
+    justify-content: center;
+}
+.main_card{
+    padding: 2.3vh 1.5vw;
+    width: 28vw;
+    min-width: 393px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
+}
+.profile{
+    position: relative;
+}
+.profile_image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.flag{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 1.5vw;
+    bottom:3vh;
+    /**top: 20%;*/
+}
+.lessons{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+}
+.lessons p{
+    margin-left: 1vw;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 170%;
+}
+.tutor_name{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tutor_name h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 170%;
+}
+.tutor_name p{
+    font-size: 14px;
+    line-height: 170%;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+.rating p{
+    font-size: 14px;
+    line-height: 170%;
+    color:#979797;
+}
+.languages{
+    margin-top: 2.5vh;
+}
+.languages h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 170%;
+}
+.languages p{
+    margin-top: 0.5vh;
+    font-size: 14px;
+    line-height: 170%;
+    color:#979797;
+
+}
+.price_header{
+    margin-top: 1.5vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 170%;
+}
+.pricing{
+    margin-top: 0.5vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 170%;
+    color: #979797;
+
+}
+.grey_line{
+    margin: 1.5vh 0 1vh 0;
+    height: 1px;
+    width: 100%;
+    background-color: #cccccc;
+}
+.book{
+    margin: 1.5vh 0 0.5vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+.students{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 170%;
+    font-weight: 600;
+    color: #FB9C46;
+}
+.students img{
+    margin-right: 10px;
+}
+.book button{
+    background-color: #058E6E;
+    color: #fff;
+    border:none;
+    border-radius: 7px;
+    padding: 8px 36px;
+    font-size: 14px;
+    line-height: 170%;
+    font-weight: 600;
+}
+.schedule_card{
+
+}
+
+@media(max-width:768px){
+    .main_card{
+        min-width: 325px;
+    }
+}

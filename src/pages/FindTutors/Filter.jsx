@@ -19,7 +19,7 @@ function Filter() {
         <div className={styles.mobile_filters_wrapper} >
         <button className={styles.mobile_filters}>Filter</button>
         <select name="" id="">
-          <option value="" disabled selected>
+          <option value="" disabled defaultValue>
             Popular Lesson
           </option>
           <option value="basics">Conversational Basics</option>
