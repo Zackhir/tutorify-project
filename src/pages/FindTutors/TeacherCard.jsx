@@ -1,18 +1,22 @@
 import { div } from "framer-motion/client";
-import  stars  from "../../assets/review-stars.svg";
 import React, { useEffect, useState } from "react";
-import play from "../../assets/play.svg"
-import profile from "../../assets/profile.svg"
-import flag from "../../assets/flag0.svg"
 import tutorsData from '../../data/tutors.json'
 import axios from "axios";
 import styles from "./TeacherCard.module.css"
-
+import TeacherCardItem from "./TeacherCardItem";
+import flag0 from "../../assets/flag0.svg"
+import flag1 from "../../assets/flag1.svg"
+import flag2 from "../../assets/flag2.svg"
+import flag3 from "../../assets/flag3.svg"
+import flag4 from "../../assets/flag4.svg"
+import flag5 from "../../assets/flag5.svg"
+import flag6 from "../../assets/flag6.svg"
 
 function TeacherCard() {
-
      const [tutors, setTutors] = useState([]);
+     const [visibleCount, setVisibleCount] = useState(4);
 
+  const flags = [flag0,flag1,flag2,flag3,flag4,flag5,flag6];
   useEffect(() => {
     async function loadTutors() {
       try {
@@ -27,11 +31,16 @@ function TeacherCard() {
         const mergedTutors = tutorsData.map((tutor, i) => ({
           ...tutor,
           name: `${randomUsers[i].name.first} ${randomUsers[i].name.last}`,
-          avatar: randomUsers[i].picture.large,
+          avatar: {
+            "large": randomUsers[i].picture.large,
+            "medium":  randomUsers[i].picture.medium,
+            "thumbnail":  randomUsers[i].picture.thumbnail
+          },
+          flag: flags[Math.floor(Math.random() * 7)],
           country: randomUsers[i].location.country
         }));
 
-        setTutors(mergedTutors.slice(0,12));
+        setTutors(mergedTutors);
       } catch (err) {
         console.error("Error fetching RandomUser:", err);
       }
@@ -39,52 +48,17 @@ function TeacherCard() {
 
     loadTutors();
   }, []);
-
+      const handleShowMore = () => {
+      setVisibleCount((prev) => prev + 4);
+    }
   return (
     <div>
-      {tutors.map((tutor) => (
-        <div key={tutor.id} className={styles.teacher_card}>
-          <div className={styles.main_card}>
-            <div className={styles.profile}>
-              <img src={tutor.avatar} className={styles.profile_image} alt="teacher profile pic" />
-              <img src={flag} className={styles.flag} alt="language" />
-            </div>
-            <div className={styles.lessons}>
-                <img src={play} alt="play_icon" />
-                <p>20 Lessons</p>
-            </div>
-            <div className={styles.tutor_name}>
-                <h2>{tutor.name}</h2>
-                <p>4.9 Rating</p>
-            </div>
-            <div className={styles.rating}>
-                <p>Community Tutor</p>
-                <img src={stars} alt="rating_stars" />
-            </div>
-            <div className={styles.languages}>
-              <h3>Speaks</h3>
-              <p>{tutor.languages} - <span className="orange">Native</span></p>
-            </div>
-            <div className={styles.price_header}>
-              <h4>30 Min Trial</h4>
-              <h4>Hourly Rate From</h4>
-            </div>
-            <div className={styles.pricing}>
-              <p>{tutor.trial_price}$</p>
-              <p>{tutor.price_per_hour}$</p>
-            </div>
-            <div className={styles.grey_line}></div>
-            <div className={styles.book}>
-              <div className={styles.students}>
-                <img src={profile} alt="" />
-              <p>{tutor.students} Students</p>
-              </div>
-              <button>Book</button>
-            </div>
-          </div>
-          <div className={styles.schedule_card}></div>
-        </div>
-      ))}
+      {tutors.slice(0,visibleCount).map((tutor) => (
+  <TeacherCardItem key={tutor.id} tutor={tutor} />
+))}
+    <div className={styles.show_more_container}>
+   <button onClick={handleShowMore} className={styles.show_more}>Show More</button>
+   </div>
     </div>
   );
 }
