@@ -15,8 +15,8 @@
     border-radius: 10px;
     border: none;
     box-shadow: rgba(91, 91, 101, 0.2) 0px 7px 29px 0px;
-    background: url(../../assets/show.png)  no-repeat 1.5vw center,  url("../../assets/arrow_drop.svg") no-repeat right 1.5vw center;
-    padding-left: 3vw;
+    background: url(../../assets/show.svg)  no-repeat 1.5vw center,  url("../../assets/arrow_drop.svg") no-repeat right 1.5vw center;
+    padding-left: 3.2vw;
         cursor: pointer;
 }
 .filter_container select:focus{

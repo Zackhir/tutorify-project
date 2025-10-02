@@ -15,10 +15,13 @@ import 'swiper/css/pagination';
 import './Testimonials.css'
 import stars from '../../../assets/review-stars.svg'
 import quotation from '../../../assets/quotation.svg'
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
+import Skeleton from "@mui/material/Skeleton";
+
 
 function Testimonials() {
     const [testimonials, setTestimonials] = useState([]);
+    const [loading, setLoading] = React.useState(true);
 
     useEffect(() => {
     const fetchData = async () => {
@@ -57,6 +60,9 @@ function Testimonials() {
         setTestimonials(data);
       } catch (error) {
         console.error("Error fetching testimonials:", error);
+      } finally{
+            setLoading(false);
+
       }
     };
 
@@ -84,18 +90,23 @@ function Testimonials() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
-         {testimonials.slice(0, 5).map((t, i) => (
+         {(loading ? Array.from(new Array(1)):testimonials.slice(0, 5)).map((t, i) => (
             <SwiperSlide key={i}>
               <div className="review-container">
                 <img src={quotation} alt="quotation mark" />
                 <div className="review">
-                  <img src={stars} alt="review stars" />
-                  <p>"{t.review}"</p>
+                  {loading ? (<Skeleton variant="rounded" width="80%" height={18} />
+                ) :(<img src={stars} alt="review stars" />)}
+                  {loading ? (<Skeleton variant="rounded" width="100%" height={32} style={{marginTop:"0.5vh"}} />
+                  ): (<p>"{t.review}"</p>)}
                   <div className="review-user">
-                    <img src={t.picture} alt={t.fullName}/>
+                    {loading? (<Skeleton variant="circular" width={58} height={58} />
+                    ) : (<img src={t.picture} alt={t.fullName}/>)}
                     <div className="review-user-info">
-                      <h6>{t.fullName}</h6>
-                      <p>{t.position}</p>
+                      {loading ? (<Skeleton variant="rounded" width={130} height={24} />
+                  ): (<h6>{t.fullName}</h6>)}
+                       {loading ? (<Skeleton variant="rounded" width={100} height={20} style={{marginTop:"0.5vh"}}/>
+                  ): (<p>{t.position}</p>)}
                     </div>
                   </div>
                 </div>

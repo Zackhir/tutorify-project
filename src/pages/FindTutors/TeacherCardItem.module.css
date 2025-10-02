@@ -174,8 +174,10 @@
     left:12.5vw;
     top:12vw;
 }
-.desc_info h4{
+.desc_info{
   margin-top: 2vh;
+}
+.desc_info h4{
   font-size: 16px;
   font-weight: 600;
   line-height: 170%;

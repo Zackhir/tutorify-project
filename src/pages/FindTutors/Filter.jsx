@@ -2,7 +2,14 @@ import React,{useState} from "react";
 import searchIcon from "../../assets/search.svg";
 import styles from "./Filter.module.css";
 
-function Filter() {
+function Filter({ onSearch }) {
+    const [term, setTerm] = useState("");
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setTerm(value);
+    onSearch(value); // send search term up to TeacherCard
+  };
   return (
     <>
       <div className={styles.filter_container}>
@@ -10,6 +17,8 @@ function Filter() {
           <input
             type="search"
             placeholder="Lessons Name               | Tutor Name"
+             value={term}
+            onChange={handleChange}
           />
           <button>
             <img src={searchIcon} alt="" />
