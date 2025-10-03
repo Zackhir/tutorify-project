@@ -132,7 +132,9 @@
     }
     .mobile_filters {
         display: block;
+        transition: 0.7s ease;
     }
+    
     .mobile_filters {
         height: 7vh;
         width: 38vw;
@@ -141,6 +143,9 @@
         color: #ffffff;
         border-radius: 10px;
     }
+    .mobile_filters:hover{
+        background-color: #905b29;
 
+    }
     
 }
