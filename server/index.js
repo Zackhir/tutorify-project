@@ -40,6 +40,6 @@ app.post("/signup", (req, res) => {
     .catch(err => res.json(err));
 });
 
-app.listen(3001, () => {
-  console.log("server is running");
+app.listen(3001, "0.0.0.0", () => {
+  console.log("server is running on port 3001");
 });
