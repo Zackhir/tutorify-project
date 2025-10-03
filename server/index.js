@@ -5,7 +5,9 @@ const UsersModel = require("./models/Users");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "*" // allow all origins for testing
+}));
 
 const CONNECTION_STRING = "mongodb+srv://qurbanovzakirhakimovic_db_user:ciXZYZrxVsHuGF2e@tutorify.fixscls.mongodb.net/TutorifyDB?retryWrites=true&w=majority&appName=Tutorify"
 mongoose.connect(CONNECTION_STRING)
