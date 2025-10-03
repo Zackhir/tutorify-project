@@ -124,6 +124,10 @@
   font-size: 14px;
   line-height: 170%;
   font-weight: 600;
+  transition: 0.7s ease;
+}
+.book button:hover{
+    background-color: #115041;
 }
 .schedule_card {
   margin-left: 4vw;
@@ -150,6 +154,7 @@
   font-weight: 600;
   line-height: 170%;
   border-bottom: 3px solid #fb9c46;
+    transition: 0.3s ease;
 }
 .about_buttons_btns {
   border: none;
@@ -158,6 +163,7 @@
   font-weight: 600;
   line-height: 170%;
   color: #979797;
+  transition: 0.7s ease;
 }
 .desc_image {
   margin-top: 3vh;
@@ -202,6 +208,10 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 170%;
+    transition: 0.7s ease;
+}
+.desc_btn button:hover{
+    background-color: #115041;
 }
 @media (max-width: 768px) {
   .main_card {

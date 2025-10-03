@@ -29,6 +29,11 @@
     text-decoration: none;
     background-color: #058E6E;
     color: #ffffff;
+    transition: 0.7s ease;
+}
+.container1 a:hover{
+    background-color: #0f5847;
+
 }
 .orange{
     color: #FB9C46;

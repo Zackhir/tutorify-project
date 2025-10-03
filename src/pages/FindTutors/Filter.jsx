@@ -56,8 +56,8 @@ function Filter({ onSearch, onCategoryChange}) {
         </div>
       </div>
       <div className={styles.tags}>
-        <button className={styles.tag} >Also Speaks</button>
-
+        <button className={`${styles.tag} ${activeFilter.includes("Also Speaks") ? styles.active : ""}`}
+            onClick={() => handleTagClick("Also Speaks")}>Also Speaks</button>
         <button className={`${styles.tag} ${activeFilter.includes("From") ? styles.active : ""}`}
             onClick={() => handleTagClick("From")}>From</button>
         <button className={`${styles.tag} ${activeFilter.includes("Price") ? styles.active : ""}`}

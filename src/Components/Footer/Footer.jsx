@@ -4,9 +4,9 @@ import google from "../../assets/google.svg";
 import twitter from "../../assets/twitter.svg";
 import insta from "../../assets/insta.svg";
 import linkedin from "../../assets/linkedin.svg";
-import "./Footer.css";
+import styles from "./Footer.module.css"; // ✅ fixed import
 import { Link } from "react-router-dom";
-import dropArrow from '../../assets/drop-arrow.svg'
+import dropArrow from "../../assets/drop-arrow.svg";
 
 export default function Footer() {
   const [openSection, setOpenSection] = useState(null);
@@ -51,13 +51,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer>
-      <div className="footer-container">
+    <footer className={styles.footer}>
+      <div className={styles.footer_container}>
         {/* Logo Section */}
-        <div className="logo-container">
-          <Link className="heading">Tutorify</Link>
+        <div className={styles.logo_container}>
+          <Link className={styles.heading}>Tutorify</Link>
           <p>Learn more than just a language</p>
-          <div>
+          <div className={styles.socials}>
             <Link>
               <img src={google} alt="google" />
             </Link>
@@ -75,21 +75,23 @@ export default function Footer() {
 
         {/* Sections */}
         {sections.map((section) => (
-          <div key={section.id}>
+          <div key={section.id} className={styles.section}>
             <button
-              className="heading-btn "
+              className={styles.heading_btn}
               onClick={() => toggleSection(section.id)}
             >
               {section.title}
               <span
-                className={`arrow ${openSection === section.id ? "rotate" : ""}`}
+                className={`${styles.arrow} ${
+                  openSection === section.id ? styles.rotate : ""
+                }`}
               >
                 <img src={dropArrow} alt="dropArrow" />
               </span>
             </button>
             <div
-              className={`mobile-collapse ${
-                openSection === section.id ? "show" : ""
+              className={`${styles.mobile_collapse} ${
+                openSection === section.id ? styles.show : ""
               }`}
             >
               {section.links.map((link, i) => (
@@ -100,7 +102,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <p>Copyright © 2021. Created with love.</p>
+      <p className={styles.copy}>Copyright © 2021. Created with love.</p>
     </footer>
   );
 }

@@ -46,6 +46,7 @@ background-image: linear-gradient(to right,#058E6E,#26a98a);
 }
 
 .signupPage input:focus {
+  color: #fff;
   border-bottom: 2px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.05);
 }

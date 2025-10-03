@@ -1,26 +1,26 @@
-footer{
+.footer{
     background-color: #F2BF62;
     padding: 6vw 6.5em 4vw 6.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.footer-container{
+.footer_container{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.footer-container >div > div{
+.footer_container >div > div{
     display: flex;
     flex-direction: column;
 }
-a{
+.footer a{
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
     margin-bottom: 1.5vw;
 }
-.heading-btn{
+.heading_btn{
     background-color: transparent;
     border: none;
     color: #ffffff;
@@ -29,20 +29,20 @@ a{
     margin-bottom: 2vw;
 }
 
-.logo-container p{
+.logo_container p{
     margin-top: 0;
     margin-bottom: 2vw;
     color: #ffffff;
     font-size: 16px;
     line-height: 28px;
 }
-.logo-container > div{
+.logo_container > div{
     flex-direction: row !important;
 }
-.logo-container > div a{
+.logo_container > div a{
     margin-right: 1vw;
 }
-footer >p{
+.footer >p{
     margin-top: 20vh;
     color: #ffffff;
     font-size: 16px;
@@ -55,34 +55,34 @@ footer >p{
 
 /*tablet*/
 @media (min-width:769px) and (max-width:1024px){
-    footer{
+    .footer{
         padding:6vw 3.5em 3vw 3.5em;
     }
-    footer > p{
+    .footer > p{
         margin-top: 13vh;
     }
 }
 /*mobile*/
 @media(max-width:768px){
-    footer{
+    .footer{
         padding:112px 25px;
     }
-    footer p{
+    .footer p{
         font-weight: 500;
     }
-     .footer-container {
+     .footer_container {
     flex-direction: column;
     align-items: flex-start;
   }
  
-  .footer-container > div {
+  .footer_container > div {
     width: 100%;
   }
-  .logo-container > div{
+  .logo_container > div{
     margin-bottom: 3vh;
   }
 
-  .footer-container .heading-btn {
+  .footer_container .heading_btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +94,7 @@ footer >p{
     cursor: pointer;
     padding: 10px 0;
   }
-   .heading-btn{
+   .heading_btn{
     margin-bottom: 0;
     padding-right: 10vw !important;
     border-top: 1px solid #fff !important;
@@ -110,26 +110,26 @@ footer >p{
     cursor: pointer;
     padding: 10px 0;
   }
-  .logo-container > p{
+  .logo_container > p{
     font-size: 12px;
   }
-   .logo-container > div a{
+   .logo_container > div a{
     padding-right: 2vw;
    }
-  .mobile-collapse {
+  .mobile_collapse {
     display: none !important;
     flex-direction: column;
     margin:1vh 0 1vh 4vw;
   }
 
-  .mobile-collapse.show {
+  .mobile_collapse.show {
     display: flex !important;
   }
-  .mobile-collapse a{
+  .mobile_collapse a{
     font-size: 12px !important;
     padding-bottom: 10px;
   }
-    .heading-btn {
+    .heading_btn {
     display: flex;
     justify-content: space-between;
     align-items: center;

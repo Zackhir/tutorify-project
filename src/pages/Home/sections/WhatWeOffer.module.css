@@ -26,34 +26,39 @@
 .container2 > div p{
     font-size: 18px;
 }
-.container2-right p{
+.container2_right p{
     color: #6C6C6C;
     font-size: 14px;
     line-height: 200%;
     margin-bottom: 30px;
 }
-.container2-right > div{
+.container2_right > div{
     display: flex;
     justify-content: center;
 }
-.container2-right > div > div{
+.container2_right > div > div{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
     align-items: center;
     gap: 2vw;
+    
 }
+/*
 .container2-right div div img:hover{
     filter: brightness(50%);
-}
-.container2-right > div > div > a{
+}*/
+.container2_right > div > div > a{
     display: flex;
     text-decoration: none;
     color: #FB9C46;
     font-size: 18px;
 }
+.container2_right > div > div > a:hover{
+        filter: brightness(50%);
+}
 /*tablet version*/
 @media (min-width:769px) and (max-width:1024px){
-        .container2-right > div > div {
+        .container2_right > div > div {
     grid-template-columns: 14vw 14vw 14vw 16vw;
     column-gap: 1vw;
     row-gap: 5vw;
@@ -73,10 +78,10 @@
     .container2 h2{
         font-size: 30px;
     }
-    .container2-right p{
+    .container2_right p{
         font-size: 12px;
     }
-    .container2-right > div > div {
+    .container2_right > div > div {
             grid-template-columns: 14vw 14vw 14vw 16vw;
             gap: 10vw;
     }
