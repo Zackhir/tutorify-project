@@ -7,7 +7,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/users")
+const CONNECTION_STRING = "mongodb+srv://qurbanovzakirhakimovic_db_user:ciXZYZrxVsHuGF2e@tutorify.fixscls.mongodb.net/TutorifyDB?retryWrites=true&w=majority&appName=Tutorify"
+mongoose.connect(CONNECTION_STRING)
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));
 

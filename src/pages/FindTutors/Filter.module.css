@@ -16,7 +16,7 @@
     border: none;
     box-shadow: rgba(91, 91, 101, 0.2) 0px 7px 29px 0px;
     background: url(../../assets/show.svg)  no-repeat 1.5vw center,  url("../../assets/arrow_drop.svg") no-repeat right 1.5vw center;
-    padding-left: 3.2vw;
+    padding-left: 3.5vw;
         cursor: pointer;
 }
 .filter_container select:focus{
@@ -85,8 +85,9 @@
     cursor: pointer;
 
 }
-.tag:focus{
-   /* background-color: #FB9C46;*/
+.tag.active{
+   background-color: #FB9C46;
+   color: #ffffff;
 }
 .mobile_filters{
     display: none;

@@ -34,12 +34,7 @@
 .nav-link:hover{
     color: #a6825e;
 }
-.nav-link.active{
-    color: #FB9C46;
-    border-bottom: 3px solid #FB9C46;
-    transition: none;
-    
-}
+
 
 .log-btns-container{
     display: flex;
@@ -64,8 +59,8 @@
     border: 3px solid #FB9C46;
 }
 .signup.active{
-    color: #FFFFFF;
     border: none;
+    background-color: #F6F6F6;
 }
 .login{
     display:flex;
@@ -85,8 +80,8 @@
     border: 3px solid #407F55;
 }
 .login.active{
-    color: #FFFFFF;
     border: none;
+    background-color: #F6F6F6;
 }
 .nav-branding{
     text-decoration: none;

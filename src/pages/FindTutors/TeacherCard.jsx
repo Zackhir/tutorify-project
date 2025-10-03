@@ -17,6 +17,7 @@ function TeacherCard() {
   const [filteredTutors, setFilteredTutors] = useState([]);
   const [visibleCount, setVisibleCount] = useState(4);
   const [loading, setLoading] = React.useState(true);
+    const [selectedCategory, setSelectedCategory] = useState("");
 
   const flags = [flag0, flag1, flag2, flag3, flag4, flag5, flag6];
   const categories = ["basics", "travel", "numbers", "daily", "culture", "business", "grammar", "exam", "speaking"];
@@ -56,21 +57,36 @@ function TeacherCard() {
 
   const handleSearch = (term) => {
     const value = term.toLowerCase();
-    const results = tutors.filter(
+    let results = tutors.filter(
       (t) =>
         t.name.toLowerCase().includes(value) ||
         t.languages.toLowerCase().includes(value)
     );
+     // If category is also selected, filter by it
+    if (selectedCategory) {
+      results = results.filter((t) => t.category === selectedCategory);
+    }
     setFilteredTutors(results);
   };
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
 
+    let results = tutors;
+
+    // Apply category filter if chosen
+    if (category) {
+      results = results.filter((t) => t.category === category);
+    }
+
+    setFilteredTutors(results);
+  };
   const handleShowMore = () => {
     setVisibleCount((prev) => prev + 4);
   };
 
   return (
     <div>
-      <Filter onSearch={handleSearch} />
+      <Filter onSearch={handleSearch}  onCategoryChange={handleCategoryChange}/>
       {(loading ? Array.from(new Array(4)) : filteredTutors.slice(0, visibleCount)).map((tutor) => (
         <TeacherCardItem key={loading ? Math.random() :tutor.id} tutor={tutor} loading={loading} />
       ))}

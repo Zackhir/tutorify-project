@@ -1,6 +1,8 @@
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './Components/Header'
+import ScrollToTop from "./Components/ScrollToTop";
+
 import Home from "./pages/Home/Home";
 import Lessons from "./Components/Lessons";
 import FindTutors from "./pages/FindTutors/FindTutors";
@@ -9,10 +11,12 @@ import Login from "./Components/Login";
 import SignUp from "./Components/SignUp";
 import Footer from './Components/Footer/Footer'
 
+
 function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop /> {/* 👈 always runs on route change */}
       <Header/>
       <main>
         <Routes>
